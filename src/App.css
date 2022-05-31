@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+h2 {
+  margin: 0;
+}
+h3{
+  margin:0;
+}
+.calculadora {
+  height: fit-content;
+  padding-bottom: 1.5rem;
+  width: 30vw;
+  border-radius: 8px;
+  box-shadow: 5px 5px 6px 1px rgba(0,0,0,0.6);
+}
+/*  HEADER    */
+h1 {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+.header {
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modo {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.icon {
+  height:100%;
+  width:100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.icon:hover {
+  transform: rotate(35deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ### PANTALLA ### */
+.pantalla {
+  height: 20vh;
+  font-family: 'Open Sans', sans-serif, Helvetica, Arial;
+  padding:0 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:flex-end;
+  justify-content: end;
+  left: 0;
+}
+.operacion>h3{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.resultado>h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.contenedor--botones {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+
+}
+.botones {
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.calc-boton {
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.calc-boton:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+/*    MEDIA QUERIES   */
+@media (max-width: 1200px){
+  .calculadora{
+    width: 45vw;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 992px){
+  .calculadora{
+    width: 55vw;
+  }
+}
+@media (max-width: 768px){
+  .calculadora{
+    width: 80vw;
+  }
+}
+@media (max-width: 576px){
+  .calculadora{
+    width: 100vw;
+    height: 100vh;
   }
 }
