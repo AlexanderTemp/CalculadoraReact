@@ -145,6 +145,14 @@ export const data=[
     },
     {
         id: 19,
+        content: "x²",
+        colorL: "#FAFAFA",
+        colorLT: "#000",
+        colorD: "#181818",
+        colorDT: "#8B898B",
+    },
+    {
+        id: 20,
         content: "=",
         colorL: "#F8DADE",
         colorLT: "#E25D6F",

@@ -49,16 +49,22 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items:flex-end;
-  justify-content: end;
+  justify-content: flex-end;
   left: 0;
 }
 .operacion>h3{
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .resultado>h2 {
   font-weight: 500;
+  font-size: 3.5rem;
+  overflow-x: auto;
+}
+.minimo {
   font-size: 2.5rem;
+  font-weight: 300;
+  color: #E25D6F;
 }
 .contenedor--botones {
   margin-top: 1.5rem;
@@ -105,5 +111,6 @@ h1 {
   .calculadora{
     width: 100vw;
     height: 100vh;
+    padding-top: 2.5rem;
   }
 }
