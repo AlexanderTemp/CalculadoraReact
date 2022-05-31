@@ -19,7 +19,7 @@ function App() {
       // eslint-disable-next-line 
       res=eval(operacion)
     } catch (error) {
-      res="Ups :C no entiendo!"
+      res="Ups :C no entendí esto."
     }
     return res
   }
@@ -100,10 +100,10 @@ function App() {
       </div>
       <div className="pantalla">
         <div className="operacion">
-          <h3 style={{ color: "#909090" }}>{pantalla.operacion}</h3>
+          {pantalla.resultado!=="Ups :C no entendí esto." && <h3 style={{ color: "#909090" }}>{pantalla.operacion}</h3>}
         </div>
         <div className="resultado">
-          <h2 className={`${pantalla.resultado==="Ups :C no entiendo!" ? "minimo":"" }`} style={{  color: mode ? "#494949" : "white" }}>{pantalla.resultado}</h2>
+          <h2 style={{  color: mode ? "#494949" : "white" }}>{pantalla.resultado}</h2>
         </div>
       </div>
       <div className="contenedor--botones">
