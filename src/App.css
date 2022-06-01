@@ -110,7 +110,7 @@ h1 {
 @media (max-width: 576px){
   .calculadora{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     padding-top: 2.5rem;
   }
 }
