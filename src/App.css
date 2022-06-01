@@ -112,5 +112,6 @@ h1 {
     width: 100vw;
     height: fit-content;
     padding-top: 2.5rem;
+    margin-top: 0;
   }
 }

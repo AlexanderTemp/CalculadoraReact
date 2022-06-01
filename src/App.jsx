@@ -4,6 +4,9 @@ import { useEffect, useState } from "react"
 import './App.css';
 import { data } from "./data";
 import Boton from "./Boton";
+//TODO: 
+// - Arreglo de decimales periódicos
+
 
 function App() {
   const [mode, setMode] = useState(false)
@@ -13,13 +16,19 @@ function App() {
   })
 
   useEffect(() => { }, [pantalla])
-  const evaluacion=(operacion)=>{
-    let res="";
+  const evaluacion = (operacion) => {
+    let res = "";
     try {
       // eslint-disable-next-line 
-      res=eval(operacion)
+      res = eval(operacion)
+
+      if (res.includes(".")) {
+        let res2 = res.split(".")
+        res = res.substring(0, (res2[0].length + 4))
+      }
+
     } catch (error) {
-      res="Ups :C no entendí esto."
+      res = "Ups :C no entendí esto."
     }
     return res
   }
@@ -71,8 +80,8 @@ function App() {
           }))
         } else {
           setPantalla({
-            operacion: pantalla.resultado.toString()+"^2",
-            resultado: Math.pow(parseInt(pantalla.resultado),2)
+            operacion: pantalla.resultado.toString() + "^2",
+            resultado: Math.pow(parseInt(pantalla.resultado), 2)
           })
         }
         break;
@@ -100,10 +109,10 @@ function App() {
       </div>
       <div className="pantalla">
         <div className="operacion">
-          {pantalla.resultado!=="Ups :C no entendí esto." && <h3 style={{ color: "#909090" }}>{pantalla.operacion}</h3>}
+          {pantalla.resultado !== "Ups :C no entendí esto." && <h3 style={{ color: "#909090" }}>{pantalla.operacion}</h3>}
         </div>
         <div className="resultado">
-          <h2 style={{  color: mode ? "#494949" : "white" }}>{pantalla.resultado}</h2>
+          <h2 style={{ color: mode ? "#494949" : "white" }}>{pantalla.resultado}</h2>
         </div>
       </div>
       <div className="contenedor--botones">
