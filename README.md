@@ -18,4 +18,4 @@ Realizado con React y css,
 
 ## Design disclaimer
 All credit refered about the design of the calculator was inspired by the next link
-* Link where i found mockup: [Página subida a github pages](https://alexandertemp.github.io/CalculadoraReact/)
+* Link where i found mockup: [Página subida a github pages](https://www.pinterest.com/pin/414823815673469166/)
