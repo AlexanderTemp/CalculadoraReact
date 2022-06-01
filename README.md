@@ -15,3 +15,7 @@ Realizado con React y css,
 ![Captura 2](https://github.com/AlexanderTemp/CalculadoraReact/blob/master/screenshots/img2.png)
 3. Captura de pantalla Móvil<br/>
 ![Captura 3](https://github.com/AlexanderTemp/CalculadoraReact/blob/master/screenshots/img4.png)
+
+## Design disclaimer
+All credit refered about the design of the calculator was inspired by the next link
+* Link where i found mockup: [Página subida a github pages](https://alexandertemp.github.io/CalculadoraReact/)
